@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreativiAI - Plateforme de Services IA</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">CreativiAI</div>
+            <ul class="nav-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Creativity, Unleashed.</h1>
+                <p>Découvrez la puissance de l'IA pour transformer vos idées en réalité</p>
+                <button class="btn btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">
+                    Découvrir nos Services
+                </button>
+            </div>
+            <div class="hero-image">
+                <div class="gradient-box"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3>Chat IA</h3>
+                    <p>Conversez avec une intelligence artificielle avancée pour obtenir des réponses précises et innovantes.</p>
+                    <button class="btn btn-secondary" onclick="comingSoon('Chat IA')">En Savoir Plus</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Génération d'Images</h3>
+                    <p>Créez des images époustouflantes grâce aux algorithms IA les plus modernes.</p>
+                    <button class="btn btn-secondary" onclick="comingSoon('Génération d\'Images')">En Savoir Plus</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📝</div>
+                    <h3>Rédaction IA</h3>
+                    <p>Générez du contenu de haute qualité en quelques secondes pour tous vos besoins.</p>
+                    <button class="btn btn-secondary" onclick="comingSoon('Rédaction IA')">En Savoir Plus</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Analyse de Données</h3>
+                    <p>Transformez vos données en insights précieux avec l'apprentissage automatique.</p>
+                    <button class="btn btn-secondary" onclick="comingSoon('Analyse de Données')">En Savoir Plus</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>À Propos de CreativiAI</h2>
+                    <p>CreativiAI est une plateforme moderne conçue pour exploiter la puissance de l'intelligence artificielle et la mettre à la portée de tous.</p>
+                    <p>Nous croyons que la technologie IA devrait être accessible, facile à utiliser et capable de transformer la façon dont les gens travaillent et créent.</p>
+                    <ul class="features-list">
+                        <li>✓ Technologie IA de pointe</li>
+                        <li>✓ Interface intuitive et facile à utiliser</li>
+                        <li>✓ Support client réactif</li>
+                        <li>✓ Plans flexibles et abordables</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Nous Contacter</h2>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <input type="text" placeholder="Votre Nom" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Votre Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Votre Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 CreativiAI. Tous les droits réservés.</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/script.js"></script>
+</body>
+</html>
