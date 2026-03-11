@@ -50,8 +50,8 @@ jobs:
         echo "📦 Creating distribution..."
         mkdir -p dist
         cp index.html dist/
-        cp -r src dist/
-        cp README.md dist/
+        if [ -d src ]; then cp -r src dist/; fi
+        if [ -f README.md ]; then cp README.md dist/; fi
         echo "✓ Distribution created!"
         ls -R dist/
     
